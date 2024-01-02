@@ -3,8 +3,8 @@ body {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    background-color: #000000;
-    color: #333;
+    background-color: white;
+    color: white;
 }
 
 nav {
@@ -32,18 +32,15 @@ nav li {
 nav a {
     text-decoration: none;
     color: white;
-    font-size: 12px;
+    font-size: 14px;
     letter-spacing: 3.3px;
     padding: 15px
 }
 
 nav a:hover {
-    color: #e74c3c;
+    color: #eba58d
 }
 
-nav a.active {
-    color: #3498db;
-}
 
 header {
     background-image: url('./img/IMG_6981.JPG');
@@ -56,25 +53,21 @@ header {
     background-position-y: 30%;
 }
 
-header h1 {
-    font-size: 3em;
-    margin: 0;
+.portfolio-preview {
+    display: flex;
 }
 
-header .btn {
-    display: inline-block;
-    margin-top: 20px;
-    padding: 10px 20px;
-    text-decoration: none;
-    background-color: #3498db;
-    color: #ffffff;
-    font-size: 1.2em;
+.portfolio-item {
+    flex: 1;
+    margin: 0 10px;
+    text-align: center;
 }
 
-.citation {
-    display: block;
-    margin-top: 20px;
-    font-size: 1.2em;
+.portfolio-item img {
+    max-width: 100%;
+    height: auto;
+    border: 1px solid #ddd;
+    border-radius: 4px;
 }
 
 .container {
@@ -84,6 +77,8 @@ header .btn {
 
 section {
     padding: 60px 0;
+    display: flex;
+    text-align: center;
 }
 
 section h2 {
@@ -97,9 +92,11 @@ section a {
     margin-top: 20px;
     padding: 15px 30px;
     text-decoration: none;
-    background-color: #e74c3c;
-    color: #ffffff;
-    font-size: 1.5em;
+    background-color: #eba58d;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1em;
 }
 
 footer {
