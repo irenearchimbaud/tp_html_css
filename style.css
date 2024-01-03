@@ -38,7 +38,7 @@ nav a {
 }
 
 nav a:hover {
-    color: #eba58d
+    color: #333;
 }
 
 
@@ -46,11 +46,32 @@ header {
     background-image: url('./img/IMG_6981.JPG');
     position: relative;
     z-index: 1;
-    height: 800px;
+    height: 700px;
     display: flex;
     justify-content: center;
     flex-flow: column;
     background-position-y: 30%;
+    background-size: 100%;
+}
+
+.portfolio-header {
+    background-image: url('./img/IMG_8265.JPG');
+    background-position-y: 15%;
+    background-size: 100%;
+}
+
+.a-propos-header {
+    background-image: url('./img/ortonAI.jpg');
+    background-position-y: 70%;
+    background-size: 100%;
+    background-repeat: no-repeat;
+}
+
+.contact-header {
+    background-image: url('./img/IMG_8345.JPG');
+    background-position-y: 25%;
+    background-size: 100%;
+    background-repeat: no-repeat;
 }
 
 .portfolio-preview {
@@ -161,8 +182,8 @@ footer {
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(5, 1fr); /* Une ligne avec 5 colonnes */
-    gap: 10px;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
     padding: 20px;
 }
 
@@ -176,6 +197,11 @@ footer {
     height: 100%;
     object-fit: cover;
     display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
 }
 
 .overlay {
@@ -209,7 +235,11 @@ footer {
     display: flex;
 }
 
-.portfollio-body {
-    padding-left: 200px;
-    padding-right: 200px;
+.title {
+    color: #333;
+}
+
+p {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
 }
