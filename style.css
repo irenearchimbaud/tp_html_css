@@ -4,7 +4,8 @@ body {
     padding: 0;
     box-sizing: border-box;
     background-color: white;
-    color: white;
+    color: #333;
+    letter-spacing: 3.3px;
 }
 
 nav {
@@ -52,12 +53,16 @@ header {
     flex-flow: column;
     background-position-y: 30%;
     background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .portfolio-header {
     background-image: url('./img/IMG_8265.JPG');
     background-position-y: 15%;
     background-size: 100%;
+    background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .a-propos-header {
@@ -65,6 +70,7 @@ header {
     background-position-y: 70%;
     background-size: 100%;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .contact-header {
@@ -72,6 +78,7 @@ header {
     background-position-y: 25%;
     background-size: 100%;
     background-repeat: no-repeat;
+    object-fit: cover;
 }
 
 .portfolio-preview {
@@ -82,6 +89,11 @@ header {
     flex: 1;
     margin: 0 10px;
     text-align: center;
+}
+
+.text-portfolio {
+    text-align: center;
+    margin: auto;
 }
 
 .portfolio-item img {
@@ -118,13 +130,11 @@ section a {
     font-weight: bold;
     color: white;
     font-size: 1.1em;
+    transition: transform 0.3s ease-in-out;
 }
 
-footer {
-    background-color: #34495e;
-    color: #ecf0f1;
-    text-align: center;
-    padding: 20px 0;
+section a:hover {
+    transform: scale(1.1);
 }
 
 .testimonial-carousel {
@@ -138,23 +148,6 @@ footer {
 
 .testimonial-item.active {
     display: block;
-}
-
-.carousel-arrows {
-    position: fixed;
-    top: 50%;
-    transform: translateY(-50%);
-    left: 20px;
-}
-
-.prev,
-.next {
-    font-size: 24px;
-    cursor: pointer;
-}
-
-.next {
-    right: 20px;
 }
 
 .scroll-to-top {
@@ -237,9 +230,35 @@ footer {
 
 .title {
     color: #333;
+    font-weight: bold;
+    font-size: 47px;
 }
 
-p {
+.paragraph {
     font-family: 'Open Sans', sans-serif;
     color: #333;
+    font-size: 30px;
+}
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev, .next {
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+#contact ul li a {
+    background-color: transparent;
+    color: #eba58d;
+    width: 800px;
+    display: inline;
+}
+
+#contact ul {
+    list-style: none;
 }

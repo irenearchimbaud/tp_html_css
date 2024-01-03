@@ -6,7 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
-    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script>
         document.addEventListener("DOMContentLoaded", function() {
             let currentIndex = 0;
@@ -27,6 +27,10 @@
     
                 testimonialItems[currentIndex].style.display = 'block';
             }
+
+                function changeTestimonial(index) {
+                    showTestimonial(index);
+                }
     
             showTestimonial(0);  // Affiche le premier commentaire au chargement
     
@@ -75,7 +79,7 @@
     <!-- END NAV -->
 
     <!-- HEADER -->
-    <header title="Sabine Généreux Photographie"></header>
+    <header title="Irène Archimbaud Photographie"></header>
     <!-- END HEADER -->
 
     <section id="portfolio">
@@ -100,39 +104,52 @@
         <div class="container">
             <h2>À Propos</h2>
             <!-- Ajoutez des informations sur vous-même ou votre studio ici -->
-            <a href="#about">En savoir plus sur moi</a>
+            <a href="./pages/a-propos.html">En savoir plus sur moi</a>
         </div>
     </section>
 
     <section id="contact">
         <div class="container">
             <h2>Contact</h2>
-            <!-- Ajoutez un formulaire de contact ou des informations de contact ici -->
-            <a href="#contact">Me Contacter</a>
+            <p>Vous souhaitez me contacter pour programmer une séance photo inoubliable ?</p>
+            <p>Je suis disponible pour discuter de vos besoins et répondre à toutes vos questions.</p>
+            <p>Vous pouvez me joindre par téléphone au <strong>07.99.63.25.53</strong>.</p>
+            <p>Vous pouvez également me contacter via mes réseaux sociaux :</p>
+            <ul>
+                <li>
+                    
+                    <div><a href="https://www.instagram.com/ireneacd.photographie/?ref=marketsplash.com" target="_blank"><i class="fab fa-instagram"></i><p>@ireneacd.photographie</p></a></div>
+                </li>
+                <li>
+                    <div><a href="https://sw-ke.facebook.com/people/Ir%C3%A8ne-Archimbaud/pfbid02fDUvWZr4VujfAxEv3zNWXDdwrP4ufVkagPwqPRzkut8VBBSekF5u6YAMTuXJtULpl/" target="_blank"><i class="fab fa-facebook"></i><p>Irène Archimbaud Photographie</p></a></div>
+                </li>
+            </ul>
+            <p>Si vous préférez m'envoyer un email, veuillez utiliser le formulaire de contact en cliquant sur le bouton ci-dessous.</p>
+            <a href="./pages/contact.html" class="contact-button">Me Contacter</a>
         </div>
     </section>
 
     <section id="testimonials">
         <div class="container">
             <h2>Avis des Clients</h2>
+            <div class="flexbox">
+                <span class="prev" onclick="changeTestimonial(-1)">&#10094;</span>
             <div class="testimonial-carousel">
                 <div class="testimonial-item">
                     <p>"Excellent service! Les photos sont incroyables."</p>
-                    <p class="client-name">- Client 1</p>
+                    <p class="client-name">- Maria Precsiuto</p>
                 </div>
                 <div class="testimonial-item">
                     <p>"Travail exceptionnel. Des souvenirs inoubliables."</p>
-                    <p class="client-name">- Client 2</p>
+                    <p class="client-name">- Patrick Jonas</p>
                 </div>
                 <div class="testimonial-item">
                     <p>"Photographe talentueuse avec une vision unique."</p>
-                    <p class="client-name">- Client 3</p>
+                    <p class="client-name">- Sabine Delyla</p>
                 </div>
             </div>
-            <div class="carousel-arrows">
-                <span class="prev" onclick="changeTestimonial(-1)">&#10094;</span>
-                <span class="next" onclick="changeTestimonial(1)">&#10095;</span>
-            </div>
+            <span class="next" onclick="changeTestimonial(1)">&#10095;</span>
+        </div>
         </div>
     </section>
 
