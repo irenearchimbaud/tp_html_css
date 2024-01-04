@@ -6,6 +6,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@300&family=Montserrat:wght@700&family=Open+Sans:wght@300&family=Shadows+Into+Light&display=swap" rel="stylesheet">
+    <link rel="icon" href="./img/photo-ronde.png" type="image/x-icon">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
     <script>
         document.addEventListener("DOMContentLoaded", function() {
@@ -102,9 +103,16 @@
 
     <section id="about">
         <div class="container">
-            <h2>À Propos</h2>
-            <!-- Ajoutez des informations sur vous-même ou votre studio ici -->
-            <a href="./pages/a-propos.html">En savoir plus sur moi</a>
+            <div>
+                <h2>À Propos</h2>
+                <div class="a-propos-de-moi">
+                <div class="profile-image">
+                    <img src="./img/photographe_besancon44-2.jpg" alt="Votre Photo">
+                </div>
+                <p>Bienvenue sur mon site ! Je suis passionnée par la photographie depuis 2017, et capturer des moments uniques est indispensable pour moi. En dehors de la photographie, j'aime explorer de nouveaux endroits, rencontrer de nouvelles personnes et partager mes expériences à travers mes images. Mon objectif est de capturer l'essence même de chaque moment, de figer l'instant pour le rendre éternel. Si vous souhaitez en savoir plus sur moi, je vous invite à cliquer sur le bouton.</p>
+            </div>
+                <a href="./pages/a-propos.html">En savoir plus sur moi</a>
+            </div>
         </div>
     </section>
 
@@ -129,9 +137,16 @@
         </div>
     </section>
 
+    <div class="banner-image-container">
+        <div class="overlay">
+            <h1>"La photographie est un arrêt du coeur d'une fraction de seconde..."</h1>
+        </div>
+    </div>
+
     <section id="testimonials">
-        <div class="container">
+        <div class="container container-avis">
             <h2>Avis des Clients</h2>
+            <div>
             <div class="flexbox">
                 <span class="prev" onclick="changeTestimonial(-1)">&#10094;</span>
             <div class="testimonial-carousel">
@@ -156,6 +171,27 @@
     <div class="scroll-to-top" onclick="scrollToTop()">
         <span>&uarr;</span>
     </div>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-content">
+            <div class="footer-section">
+                <h3>Irène Archimbaud Photographie</h3>
+                <p>15 chemin de Pressin 69230 Saint-Genis-Laval</p>
+                <p>07.99.63.25.53</p>
+                <p>ireneacd.photographie@gmail.com</p>
+            </div>
+
+            <div class="footer-section">
+
+                <a href="https://www.instagram.com/ireneacd.photographie/?ref=marketsplash.com" target="_blank"><i class="fab fa-instagram"></i></a>
+                <a href="https://sw-ke.facebook.com/people/Ir%C3%A8ne-Archimbaud/pfbid02fDUvWZr4VujfAxEv3zNWXDdwrP4ufVkagPwqPRzkut8VBBSekF5u6YAMTuXJtULpl/" target="_blank"><i class="fab fa-facebook"></i></a>
+            </div>
+        </div>
+
+        <p class="copyright">&copy; 2024 Irène Archimbaud Photographie. Tous droits réservés.</p>
+    </footer>
+    <!-- END FOOTER -->
 
 </body>
 </html>

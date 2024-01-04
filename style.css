@@ -228,10 +228,10 @@ section a:hover {
     display: flex;
 }
 
-.title {
+h1 {
+    font-size: 2.5em;
     color: #333;
-    font-weight: bold;
-    font-size: 47px;
+    text-align: center;
 }
 
 .paragraph {
@@ -261,4 +261,189 @@ section a:hover {
 
 #contact ul {
     list-style: none;
+}
+
+.container-avis {
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 700px;
+    padding-bottom: 45px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+.formulaire-contact {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 30px;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    color: #333333;
+}
+
+input, textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 16px;
+    border: 1px solid #eba58d;
+    border-radius: 4px;
+    box-sizing: border-box;
+    resize: none;
+}
+
+button {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 15px 30px;
+    text-decoration: none;
+    background-color: #eba58d;
+    border-radius: 30px;
+    font-weight: bold;
+    color: white;
+    font-size: 1.1em;
+    transition: transform 0.3s ease-in-out;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    transform: scale(1.1);
+}
+
+.page-formulaire {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-left: 80px;
+    margin-top: 50px;
+}
+
+.infos-pratiques,
+.formulaire-contact {
+    flex-basis: 48%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.page-formulaire .infos-pratiques h1 {
+    text-align: left;
+    margin-bottom: 50px;
+}
+
+footer {
+    background-color: #f4f4f4;
+    color: #333333;
+    padding: 20px;
+    text-align: center;
+}
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer-section {
+    flex-basis: 20%;
+    margin-bottom: 20px;
+}
+
+.footer-section h3 {
+    font-size: 0.8em;
+    margin-bottom: 10px;
+}
+
+.footer-section p {
+    font-size: 0.7em;
+    margin: 5px 0;
+}
+
+.footer-section a {
+    color: #eba58d;
+    text-decoration: none;
+    font-size: 1.5em;
+}
+
+.copyright {
+    font-size: 0.7em;
+}
+
+.banner-image-container {
+    position: relative;
+    background: url('./img/IMG_2763.JPG') center/cover no-repeat fixed;
+    height: 540px;
+    overflow: hidden;
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.overlay h1 {
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 700px;
+    word-spacing: 10px;
+    line-height: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.profile-image {
+    border-radius: 50%;
+    overflow: hidden;
+    margin-right: 20px;
+    width: 400px;
+    height: 400px;
+}
+
+.profile-image img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 50%;
+}
+
+.a-propos-de-moi {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    vertical-align: middle;
+    justify-content: space-around;
+}
+
+.a-propos-de-moi p {
+    width: 800px;
+}
+
+.image-section img {
+    overflow: hidden;
+    margin-right: 20px;
+    width: 700px;
+    height: 400px;
+    border-radius: 4px;
+    object-fit: cover;
+    margin: 40px;
+}
+
+.a-propos-text {
+    width: 1000px;
 }
