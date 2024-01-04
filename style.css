@@ -8,6 +8,14 @@ body {
     letter-spacing: 3.3px;
 }
 
+h1 {
+    font-size: 2.5em;
+    color: #333;
+    text-align: center;
+}
+
+/* NAVBAR */
+
 nav {
     margin-top: 20px;
     background-color: transparent;
@@ -42,6 +50,10 @@ nav a:hover {
     color: #333;
 }
 
+/* END NAVBAR */
+
+
+/* HEADER */
 
 header {
     background-image: url('./img/IMG_6981.JPG');
@@ -81,6 +93,11 @@ header {
     object-fit: cover;
 }
 
+/* END HEADERS */
+
+
+/* PORTFOLIO PAGE */
+
 .portfolio-preview {
     display: flex;
 }
@@ -102,6 +119,41 @@ header {
     border: 1px solid #ddd;
     border-radius: 4px;
 }
+
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+    padding: 20px;
+}
+
+.photo {
+    position: relative;
+    overflow: hidden;
+}
+
+.photo img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.photo:hover img {
+    transform: scale(1.1);
+}
+
+.paragraph {
+    font-family: 'Open Sans', sans-serif;
+    color: #333;
+    font-size: 30px;
+}
+
+/* END PORTFOLIO PAGE */
+
+
+/* INDEX PAGE */
 
 .container {
     width: 80%;
@@ -137,6 +189,64 @@ section a:hover {
     transform: scale(1.1);
 }
 
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.45);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: #ffffff;
+}
+
+.overlay h1 {
+    font-size: 2em;
+    color: #ffffff;
+    letter-spacing: 2px;
+    font-family: 'Open Sans', sans-serif;
+    text-align: center;
+    width: 700px;
+    word-spacing: 10px;
+    line-height: 60px;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
+}
+
+.overlay img {
+    max-width: 80%;
+    max-height: 80%;
+    object-fit: cover;
+}
+
+.overlay:target {
+    display: flex;
+}
+
+.banner-image-container {
+    position: relative;
+    background: url('./img/IMG_2763.JPG') center/cover no-repeat fixed;
+    height: 540px;
+    overflow: hidden;
+}
+
+#contact ul li a {
+    background-color: transparent;
+    color: #eba58d;
+    width: 800px;
+    display: inline;
+}
+
+#contact ul {
+    list-style: none;
+}
+
+/* END INDEX PAGE */
+
+
+/* AVIS COMPONENT */
+
 .testimonial-carousel {
     overflow: hidden;
 }
@@ -149,6 +259,31 @@ section a:hover {
 .testimonial-item.active {
     display: block;
 }
+
+.flexbox {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.prev, .next {
+    margin-right: 50px;
+    margin-left: 50px;
+    cursor: pointer;
+}
+
+.container-avis {
+    margin: 0 auto;
+    border-radius: 8px;
+    width: 700px;
+    padding-bottom: 45px;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}
+
+/* END AVIS COMPONENT */
+
+
+/* FLECHE COMPONENT */
 
 .scroll-to-top {
     position: fixed;
@@ -173,103 +308,10 @@ section a:hover {
     opacity: 1;
 }
 
-.gallery {
-    display: grid;
-    grid-template-columns: repeat(4, 1fr);
-    gap: 20px;
-    padding: 20px;
-}
+/* END FLECHE COMPONENT */
 
-.photo {
-    position: relative;
-    overflow: hidden;
-}
 
-.photo img {
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-    display: block;
-    transition: transform 0.3s ease-in-out;
-}
-
-.photo:hover img {
-    transform: scale(1.1);
-}
-
-.overlay {
-    display: none;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.8);
-    justify-content: center;
-    align-items: center;
-}
-
-.overlay img {
-    max-width: 80%;
-    max-height: 80%;
-    object-fit: cover;
-}
-
-.close-btn {
-    position: absolute;
-    top: 10px;
-    right: 10px;
-    font-size: 20px;
-    color: #fff;
-    text-decoration: none;
-}
-
-.overlay:target {
-    display: flex;
-}
-
-h1 {
-    font-size: 2.5em;
-    color: #333;
-    text-align: center;
-}
-
-.paragraph {
-    font-family: 'Open Sans', sans-serif;
-    color: #333;
-    font-size: 30px;
-}
-
-.flexbox {
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.prev, .next {
-    margin-right: 50px;
-    margin-left: 50px;
-    cursor: pointer;
-}
-
-#contact ul li a {
-    background-color: transparent;
-    color: #eba58d;
-    width: 800px;
-    display: inline;
-}
-
-#contact ul {
-    list-style: none;
-}
-
-.container-avis {
-    margin: 0 auto;
-    border-radius: 8px;
-    width: 700px;
-    padding-bottom: 45px;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-}
+/* CONTACT PAGE */
 
 .formulaire-contact {
     max-width: 600px;
@@ -336,6 +378,11 @@ button:hover {
     margin-bottom: 50px;
 }
 
+/* END CONTACT PAGE */
+
+
+/* FOOTER */
+
 footer {
     background-color: #f4f4f4;
     color: #333333;
@@ -375,37 +422,10 @@ footer {
     font-size: 0.7em;
 }
 
-.banner-image-container {
-    position: relative;
-    background: url('./img/IMG_2763.JPG') center/cover no-repeat fixed;
-    height: 540px;
-    overflow: hidden;
-}
+/* END FOOTER */
 
-.overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background: rgba(0, 0, 0, 0.45);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    color: #ffffff;
-}
 
-.overlay h1 {
-    font-size: 2em;
-    color: #ffffff;
-    letter-spacing: 2px;
-    font-family: 'Open Sans', sans-serif;
-    text-align: center;
-    width: 700px;
-    word-spacing: 10px;
-    line-height: 60px;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
-}
+/* A PROPOS */
 
 .profile-image {
     border-radius: 50%;
@@ -447,3 +467,5 @@ footer {
 .a-propos-text {
     width: 1000px;
 }
+
+/* END A PROPOS */
