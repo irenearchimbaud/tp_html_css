@@ -482,9 +482,9 @@ footer {
 /* TARIFS PAGE */
 
 .card {
-    width: 25%;
+    width: 420px;
     height: 750px;
-    margin: 20px;
+    margin: 15px;
     border-radius: 10px;
     overflow: hidden;
     box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
@@ -511,13 +511,14 @@ footer {
 }
 
 .tarifs-page {
-    padding: 80px;
     display: flex;
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
     align-items: center;
     text-align: center;
+    padding-bottom: 80px;
+    padding-top: 80px;
 }
 
 .tarifs-text {
