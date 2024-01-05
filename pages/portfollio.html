@@ -8,8 +8,7 @@
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/css/lightbox.min.css">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
         <link rel="icon" href="../img/photo-ronde.png" type="image/x-icon">
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/lightbox2/2.11.3/js/lightbox.min.js"></script>
-        <script src="../script.js"></script>
+        <script src="../script.js" defer></script>
         <title>Portfollio - Irène Archimbaud Photographie</title>
     </head>
     <body>
@@ -36,30 +35,37 @@
         </div>
 
         <div class="gallery">
-            <div class="photo"><a href="../img/624A7202.jpg" data-lightbox="gallery"><img src="../img/624A7202.jpg"></a></div>
-            <div class="photo"><a href="../img/624A7258WEB.jpg" data-lightbox="gallery"><img src="../img/624A7258WEB.jpg"></a></div>
-            <div class="photo"><a href="../img/anakinAIWEB.jpg" data-lightbox="gallery"><img src="../img/anakinAIWEB.jpg"></a></div>
-            <div class="photo"><a href="../img/D5F3EBFA-27FC-40CA-B564-DA958A54151C.jpeg" data-lightbox="gallery"><img src="../img/D5F3EBFA-27FC-40CA-B564-DA958A54151C.jpeg"></a></div>
-            <div class="photo"><a href="../img/IMG_1415.JPG" data-lightbox="gallery"><img src="../img/IMG_1415.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_2542.JPG" data-lightbox="gallery"><img src="../img/IMG_2542.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_2759.JPG" data-lightbox="gallery"><img src="../img/IMG_2759.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_2763.JPG" data-lightbox="gallery"><img src="../img/IMG_2763.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_3957.JPG" data-lightbox="gallery"><img src="../img/IMG_3957.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_6850.JPG" data-lightbox="gallery"><img src="../img/IMG_6850.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_6981.JPG" data-lightbox="gallery"><img src="../img/IMG_6981.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_7426.JPG" data-lightbox="gallery"><img src="../img/IMG_7426.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_7427.JPG" data-lightbox="gallery"><img src="../img/IMG_7427.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_7516.JPG" data-lightbox="gallery"><img src="../img/IMG_7516.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_8010.JPG" data-lightbox="gallery"><img src="../img/IMG_8010.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_8265.JPG" data-lightbox="gallery"><img src="../img/IMG_8265.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_8269.JPG" data-lightbox="gallery"><img src="../img/IMG_8269.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_8345.JPG" data-lightbox="gallery"><img src="../img/IMG_8345.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_9932.JPG" data-lightbox="gallery"><img src="../img/IMG_9932.JPG"></a></div>
-            <div class="photo"><a href="../img/IMG_9935.JPG" data-lightbox="gallery"><img src="../img/IMG_9935.JPG"></a></div>
+            <div class="photo"><img src="../img/624A7202.jpg" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/624A7258WEB.jpg" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/anakinAIWEB.jpg" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/D5F3EBFA-27FC-40CA-B564-DA958A54151C.jpeg" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_1415.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_2542.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_2759.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_2763.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_3957.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_6850.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_6981.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_7426.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_7427.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_7516.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_8010.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_8265.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_8269.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_8345.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_9932.JPG" onclick="openModal(this.src)"></div>
+            <div class="photo"><img src="../img/IMG_9935.JPG" onclick="openModal(this.src)"></div>
         </div>
 
         <div class="scroll-to-top" onclick="scrollToTop()">
             <span>&uarr;</span>
+        </div>
+
+        <div id="myModal" class="modal" style="display: none;">
+            <div class="modal-content">
+                <span class="close" onclick="closeModal()">&times;</span>
+                <img id="modalImage">
+            </div>
         </div>
 
         <!-- FOOTER -->
